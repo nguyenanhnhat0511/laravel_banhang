@@ -1,13 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Slide;
 
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function getIndex(){
-    	return view('page.trangchu');
+    	$slide = Slide::all();
+    	print_r($slide);	
+    	//return view('page.trangchu',['slide'=>$slide ]);
+    	return view('page.trangchu',compact('slide'));
     }
 
     public function getLoaiSp()
