@@ -56,4 +56,13 @@ class PageController extends Controller
     {
     	return view('page.checkout');
     }
+    public function get_about()
+    {
+        return view('page.about');
+    }
+    public function get_404()
+    {
+        return view('page.404');
+    }
+    
 }

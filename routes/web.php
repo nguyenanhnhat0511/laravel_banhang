@@ -53,3 +53,12 @@ Route::get('/kiem-tra',
 	'as'=>'kiemtra',
 	'uses'=>'PageController@get_checkout'
 ]);
+Route::get('/gioi-thieu',
+[
+	'as'=>'gioithieu',
+	'uses'=>'PageController@get_about'
+]);
+Route::get('/404',
+['as'=>'loi',
+'uses'=>'PageController@get_404'
+]);
